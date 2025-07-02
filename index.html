@@ -486,84 +486,14 @@
                   </a>
                </div>
                <div class="custom_slider scroll_effect">
-                  <div class="custom_slide active" id="custom-slide-1">
-                     <h2>STEP 1:</h2>
-                     <h3>Setup a wallet</h3>
-                     <p>
+                  <div class="custom_slide active" id="custom-slide-1" style=" background:#000;color:#fff;display:flex;flex-direction: row;;gap:1.8rem;padding:8rem 4.4rem ;border-radius:2.1875rem;">
+                     <div><h2 style="color: white;">STEP 4:</h2>
+                     <h3 style="color: white;">Connect your wallet</h3></div>
+                     
+                     <!-- <p>
                         Careful not to swallow it <br />
                         like AQUIN did!
-                     </p>
-                     <div class="custom_pagination">
-                        <span class="custom_dot active" data-index="0"></span>
-                        <span class="custom_dot" data-index="1"></span>
-                        <span class="custom_dot" data-index="2"></span>
-                        <span class="custom_dot" data-index="3"></span>
-                        <span class="custom_dot" data-index="4"></span>
-                     </div>
-                     <img src="source/img/eyes.png" alt="" class="step" />
-                  </div>
-                  <div class="custom_slide" id="custom-slide-2">
-                     <h2>STEP 2:</h2>
-                     <h3>Buy some SOL</h3>
-                     <p>
-                        AQUIN thinks it's magic internet <br />
-                        money, and he's not entirely wrong.
-                     </p>
-                     <div class="custom_pagination">
-                        <span class="custom_dot" data-index="0"></span>
-                        <span class="custom_dot active" data-index="1"></span>
-                        <span class="custom_dot" data-index="2"></span>
-                        <span class="custom_dot" data-index="3"></span>
-                        <span class="custom_dot" data-index="4"></span>
-                     </div>
-                     <img src="source/img/eyes.png" alt="" class="step" />
-                  </div>
-                  <div class="custom_slide" id="custom-slide-3">
-                     <h2>STEP 3:</h2>
-                     <h3>Head to swap.pump.fun</h3>
-                     <p>
-                        AQUIN calls it the "swirly <br />
-                        token water slide"
-                     </p>
-                     <div class="custom_pagination">
-                        <span class="custom_dot" data-index="0"></span>
-                        <span class="custom_dot" data-index="1"></span>
-                        <span class="custom_dot active" data-index="2"></span>
-                        <span class="custom_dot" data-index="3"></span>
-                        <span class="custom_dot" data-index="4"></span>
-                     </div>
-                     <img src="source/img/eyes.png" alt="" class="step" />
-                  </div>
-                  <div class="custom_slide" id="custom-slide-4">
-                     <h2>STEP 4:</h2>
-                     <h3>Connect your wallet</h3>
-                     <p>
-                        Careful not to swallow it <br />
-                        like AQUIN did!
-                     </p>
-                     <div class="custom_pagination">
-                        <span class="custom_dot" data-index="0"></span>
-                        <span class="custom_dot" data-index="1"></span>
-                        <span class="custom_dot" data-index="2"></span>
-                        <span class="custom_dot active" data-index="3"></span>
-                        <span class="custom_dot" data-index="4"></span>
-                     </div>
-                     <img src="source/img/eyes.png" alt="" class="step" />
-                  </div>
-                  <div class="custom_slide" id="custom-slide-5">
-                     <h2>STEP 5:</h2>
-                     <h3>Swap SOL for $AQUIN</h3>
-                     <p>
-                        Congratulations, you're now part of <br />
-                        the chaotic good crypto revolution!
-                     </p>
-                     <div class="custom_pagination">
-                        <span class="custom_dot" data-index="0"></span>
-                        <span class="custom_dot" data-index="1"></span>
-                        <span class="custom_dot" data-index="2"></span>
-                        <span class="custom_dot" data-index="3"></span>
-                        <span class="custom_dot active" data-index="4"></span>
-                     </div>
+                     </p> -->
                      <img src="source/img/eyes.png" alt="" class="step" />
                   </div>
                </div>
@@ -573,7 +503,7 @@
 
       <div class="moving_line_scroll"></div>
 
-      <section class="sn_fuq">
+      <!-- <section class="sn_fuq">
          <div class="anchor" id="FAQs"></div>
          <div class="container">
             <div class="sn_fuq_content">
@@ -627,7 +557,7 @@
                </div>
             </div>
          </div>
-      </section>
+      </section> -->
 
       <footer>
          <div class="container">
@@ -769,46 +699,6 @@
                console.error('Error when copying text', error);
             });
       });
-</script>
-
-<script>
-   let customCurrentIndex = 0;
-   const customSlides = document.querySelectorAll('.custom_slide');
-   const customDots = document.querySelectorAll('.custom_dot');
-
-   function showCustomSlide(index) {
-      customSlides.forEach((slide, i) => {
-         slide.classList.remove('active');
-         if (customDots[i]) {
-            customDots[i].classList.remove('active');
-         }
-      });
-      customSlides[index].classList.add('active');
-      if (customDots[index]) {
-         customDots[index].classList.add('active');
-      }
-   }
-
-   function nextCustomSlide() {
-      customCurrentIndex = (customCurrentIndex + 1) % customSlides.length;
-      showCustomSlide(customCurrentIndex);
-   }
-
-   let customSlideInterval = setInterval(nextCustomSlide, 4000);
-
-   customDots.forEach((dot) => {
-      dot.addEventListener('click', function () {
-         clearInterval(customSlideInterval);
-
-         const index = parseInt(this.getAttribute('data-index'));
-         customCurrentIndex = index;
-         showCustomSlide(customCurrentIndex);
-
-         customSlideInterval = setInterval(nextCustomSlide, 5000);
-      });
-   });
-
-   showCustomSlide(customCurrentIndex);
 </script>
 
 <script>

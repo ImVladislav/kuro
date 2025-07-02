@@ -1364,13 +1364,10 @@ header.active {
    background: #ab0000;
 }
 .custom_slider .custom_slide .step {
-   height: 100%;
-   position: absolute;
-   aspect-ratio: 1/1;
-   top: 0;
-   right: 0;
-   -webkit-animation: step_img 1.4s ease;
-   animation: step_img 1.4s ease;
+   height: 50%;
+   width: auto;
+   display: block;
+   margin: auto;
 }
 
 @-webkit-keyframes step_text {
