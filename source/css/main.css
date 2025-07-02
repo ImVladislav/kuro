@@ -44,8 +44,8 @@ body {
 }
 .page_wrapper::before {
    content: '';
-   background: url(../img/noise.jpg);
-   background-size: 50%;
+   /* background: url(../img/noise.jpg); */
+   /* background-size: 50%; */
    position: absolute;
    inset: 0;
    z-index: 1000;
@@ -54,10 +54,10 @@ body {
    -ms-user-select: none;
    user-select: none;
    pointer-events: none;
-   mix-blend-mode: color-dodge;
-   opacity: 0.4;
-   -webkit-animation: page_wrapper 0.4s linear infinite;
-   animation: page_wrapper 0.4s linear infinite;
+   /* mix-blend-mode: color-dodge; */
+   /* opacity: 0.4; */
+   /* -webkit-animation: page_wrapper 0.4s linear infinite; */
+   /* animation: page_wrapper 0.4s linear infinite; */
 }
 
 .scroll_effect {
@@ -74,64 +74,13 @@ body {
 }
 
 @-webkit-keyframes page_wrapper {
-   0% {
-      background-position: 0rem;
-   }
-   24% {
-      background-position: 0rem;
-   }
-   25% {
-      background-position: 15rem;
-   }
-   49% {
-      background-position: 15rem;
-   }
-   50% {
-      background-position: 30rem;
-   }
-   74% {
-      background-position: 30rem;
-   }
-   75% {
-      background-position: 45rem;
-   }
-   99% {
-      background-position: 45rem;
-   }
-   100% {
-      background-position: 0rem;
-   }
+   /* видалено */
 }
 
 @keyframes page_wrapper {
-   0% {
-      background-position: 0rem;
-   }
-   24% {
-      background-position: 0rem;
-   }
-   25% {
-      background-position: 15rem;
-   }
-   49% {
-      background-position: 15rem;
-   }
-   50% {
-      background-position: 30rem;
-   }
-   74% {
-      background-position: 30rem;
-   }
-   75% {
-      background-position: 45rem;
-   }
-   99% {
-      background-position: 45rem;
-   }
-   100% {
-      background-position: 0rem;
-   }
+   /* видалено */
 }
+
 a {
    text-decoration: none;
    cursor: pointer;
@@ -337,7 +286,7 @@ header.active {
 .mobile_navigation {
    position: fixed;
    inset: 0;
-   background: linear-gradient(179deg, #4c6bed -10.01%, #332970 109.21%);
+   background: linear-gradient(179deg, #2bb6ff -10.01%, #72c8f6 109.21%);
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
@@ -1090,12 +1039,13 @@ header.active {
 }
 .sn_tokenomics .rocket_man {
    position: absolute;
-   width: 40rem;
-   height: 40rem;
-   top: 0;
-   left: -6rem;
-   -webkit-animation: rocket_man 2s ease infinite;
-   animation: rocket_man 2s ease infinite;
+   width: 39rem;
+   height: 68rem;
+   top: 70px;
+   right: 60%;
+   left: auto;
+   /* -webkit-animation: rocket_man 2s ease infinite; */
+   /* animation: rocket_man 2s ease infinite; */
 }
 
 @-webkit-keyframes rocket_man {
@@ -1650,10 +1600,15 @@ footer {
 }
 footer .footer_bloop {
    position: absolute;
-   aspect-ratio: 1/1;
+   width: 100%;
+   max-width: 345px;
    height: 100%;
-   left: 0;
-   top: 0;
+   max-height: 345px;
+   left: calc((100vw - 90rem) / 2);
+   top: 50%;
+   transform: translateY(-50%);
+   aspect-ratio: 1/1;
+   /* padding-left враховується через left */
 }
 
 .sn_footer_content {
