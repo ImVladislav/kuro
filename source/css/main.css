@@ -674,9 +674,9 @@ header.active {
   -ms-flex-align: center;
   align-items: center;
   gap: 3.5rem;
-  background: url(../img/aquaonsui.png) #171717;
-  background-position: center;
-  background-size: 16.5625rem;
+  background: url(../img/Kuro_on_sol.png) #171717;
+  background-position: top;
+  background-size: 20rem;
   position: relative;
   z-index: 10;
   -webkit-animation: moving_line_scroll 2s linear infinite;
