@@ -31,6 +31,17 @@ body {
    height: 100%;
    width: 100%;
    scroll-behavior: smooth;
+   position: relative;
+}
+body::before {
+   content: '';
+   position: fixed;
+   inset: 0;
+   z-index: 9999;
+   pointer-events: none;
+   background: url(../img/noise.jpg) repeat;
+   opacity: 0.25;
+   mix-blend-mode: soft-light;
 }
 
 .page_wrapper {
@@ -1022,10 +1033,10 @@ header.active {
 }
 
 .sn_tokenomics {
-   background: url(../img/tokenomics_bg.jpg);
-   background-size: 90rem;
-   -webkit-animation: sn_tokenomics_content 20s linear infinite;
-   animation: sn_tokenomics_content 20s linear infinite;
+   background: url(../img/tokenomics_bg.png) no-repeat center top;
+   background-size: cover;
+   /* -webkit-animation: sn_tokenomics_content 20s linear infinite; */
+   /* animation: sn_tokenomics_content 20s linear infinite; */
    position: relative;
 }
 .sn_tokenomics .moon {
