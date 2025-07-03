@@ -34,16 +34,23 @@ body {
 }
 /* body::before {
   content: "";
-  position: fixed;
+  background: url(../img/noise.jpg);
+  background-size: 50%;
+  position: absolute;
   inset: 0;
-  z-index: 9999;
+  z-index: 1000;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   pointer-events: none;
-  background: url(../img/web/1.gif) repeat;
-  opacity: 0.25;
-  mix-blend-mode: soft-light;
+  mix-blend-mode: color-dodge;
+  opacity: 0.9;
+  -webkit-animation: page_wrapper 0.4s linear infinite;
+  animation: page_wrapper 0.4s linear infinite;
 } */
 
-body::before {
+/* body::before {
   content: "";
   position: fixed;
   inset: 0;
@@ -52,7 +59,7 @@ body::before {
   background: url(../img/web/1.gif) repeat;
   opacity: 0.35;
   mix-blend-mode: normal;
-}
+} */
 .page_wrapper {
   position: relative;
   overflow: hidden;
@@ -64,8 +71,8 @@ body::before {
 }
 .page_wrapper::before {
   content: "";
-  /* background: url(../img/noise.jpg); */
-  /* background-size: 50%; */
+  background: url(../img/noise.jpg);
+  background-size: 50%;
   position: absolute;
   inset: 0;
   z-index: 1000;
@@ -74,10 +81,10 @@ body::before {
   -ms-user-select: none;
   user-select: none;
   pointer-events: none;
-  /* mix-blend-mode: color-dodge; */
-  /* opacity: 0.4; */
-  /* -webkit-animation: page_wrapper 0.4s linear infinite; */
-  /* animation: page_wrapper 0.4s linear infinite; */
+  mix-blend-mode: color-dodge;
+  opacity: 0.4;
+  -webkit-animation: page_wrapper 0.4s linear infinite;
+  animation: page_wrapper 0.4s linear infinite;
 }
 
 .scroll_effect {
@@ -94,11 +101,63 @@ body::before {
 }
 
 @-webkit-keyframes page_wrapper {
-  /* видалено */
+  0% {
+    background-position: 0rem;
+  }
+  24% {
+    background-position: 0rem;
+  }
+  25% {
+    background-position: 15rem;
+  }
+  49% {
+    background-position: 15rem;
+  }
+  50% {
+    background-position: 30rem;
+  }
+  74% {
+    background-position: 30rem;
+  }
+  75% {
+    background-position: 45rem;
+  }
+  99% {
+    background-position: 45rem;
+  }
+  100% {
+    background-position: 0rem;
+  }
 }
 
 @keyframes page_wrapper {
-  /* видалено */
+  0% {
+    background-position: 0rem;
+  }
+  24% {
+    background-position: 0rem;
+  }
+  25% {
+    background-position: 15rem;
+  }
+  49% {
+    background-position: 15rem;
+  }
+  50% {
+    background-position: 30rem;
+  }
+  74% {
+    background-position: 30rem;
+  }
+  75% {
+    background-position: 45rem;
+  }
+  99% {
+    background-position: 45rem;
+  }
+  100% {
+    background-position: 0rem;
+  }
 }
 
 a {
