@@ -1271,9 +1271,9 @@ header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 2rem;
 }
 .sn_how_to_buy_content .header {
