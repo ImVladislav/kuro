@@ -1322,6 +1322,31 @@ header nav {
   flex: 1;
   overflow: hidden;
 }
+.custom_slider__wrap {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .slider_side_img {
+    width: 45vw !important;
+  }
+  .custom_slider__wrap {
+    flex-direction: column-reverse;
+    width: 90vw;
+    padding: 30px 15px;
+  }
+  .custom_slider__wrap__title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .custom_slider .custom_slide h3 {
+    font-size: 2.5rem;
+  }
+  .custom_slider .custom_slide p {
+    max-width: 250px;
+  }
+}
 .custom_slider .custom_slide {
   background: #000;
   color: #fff;

@@ -448,6 +448,10 @@
     gap: 1rem;
     height: 32rem;
   }
+  .custom_slider__wrap {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .custom_slider .custom_slide h2 {
     font-size: 1.2rem;
     line-height: 1.2rem;
