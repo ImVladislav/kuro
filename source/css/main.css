@@ -625,7 +625,7 @@ header nav {
   display: flex;
   -webkit-animation: btn_animated 4s ease-out infinite;
   animation: btn_animated 4s ease-out infinite;
-      margin-right: 2%;
+  margin-right: 2%;
 }
 
 @-webkit-keyframes btn_animated {
@@ -698,7 +698,7 @@ header nav {
 }
 .sn_about {
   padding: 6rem 0 3rem;
-  background: linear-gradient(0deg, #5ac2f9 .09%, #49bdfb .68%);
+  background: linear-gradient(0deg, #5ac2f9 0.09%, #49bdfb 0.68%);
 }
 
 .sn_about_content {
@@ -1026,13 +1026,18 @@ header nav {
   width: 23rem;
   height: 23rem;
 }
-
-.sn_tokenomics {
+.sn_tokenomics_bgd {
   background: url(../img/tokenomics_bg.png) no-repeat center top;
   background-size: cover;
+  position: relative;
+}
+
+.sn_tokenomics {
+  /* background: url(../img/tokenomics_bg.png) no-repeat center top; */
+  /* background-size: cover; */
   /* -webkit-animation: sn_tokenomics_content 20s linear infinite; */
   /* animation: sn_tokenomics_content 20s linear infinite; */
-  position: relative;
+  /* position: relative; */
 }
 .sn_tokenomics::before {
   content: "";
@@ -1055,14 +1060,14 @@ header nav {
   animation: moon 100s linear infinite;
 }
 .sn_tokenomics .rocket_man {
-    position: absolute;
-    width: 31rem;
-    height: 60rem;
-    top: 122px;
-    right: 60%;
-    left: auto;
-    /* -webkit-animation: rocket_man 2s ease infinite; */
-    /* animation: rocket_man 2s ease infinite; */
+  position: absolute;
+  width: 31rem;
+  height: 60rem;
+  top: 122px;
+  right: 60%;
+  left: auto;
+  /* -webkit-animation: rocket_man 2s ease infinite; */
+  /* animation: rocket_man 2s ease infinite; */
 }
 
 @-webkit-keyframes rocket_man {
@@ -1257,7 +1262,7 @@ header nav {
 }
 
 .sn_how_to_buy {
-  background: linear-gradient(0deg, #51befe .09%, #2bb6ff .68%);
+  /* background: linear-gradient(0deg, #51befe .09%, #2bb6ff .68%); */
   padding: 3rem 0 9rem;
 }
 
@@ -1761,33 +1766,33 @@ footer .footer_bloop {
 }
 
 .slider_side_img {
-    max-width: 20rem;
-    width: 30vw;
-    height: auto;
-    margin-left: 2rem;
-    align-self: center;
+  max-width: 20rem;
+  width: 30vw;
+  height: auto;
+  margin-left: 2rem;
+  align-self: center;
 }
 
 .custom_pagination {
-    width: 100%;
-    margin: 2rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.7rem;
+  width: 100%;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
 }
 .custom_dot {
-    width: 1.2rem;
-    height: 1.2rem;
-    border-radius: 50%;
-    background: #fff;
-    opacity: 0.4;
-    transition: opacity 0.2s, transform 0.2s;
-    cursor: pointer;
-    border: none;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.4;
+  transition: opacity 0.2s, transform 0.2s;
+  cursor: pointer;
+  border: none;
 }
 .custom_dot.active {
-    opacity: 1;
-    transform: scale(1.2);
-    background: #fff;
+  opacity: 1;
+  transform: scale(1.2);
+  background: #fff;
 }
