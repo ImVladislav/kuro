@@ -196,14 +196,18 @@
     }
     .moving_line_scroll {
       height: 3rem;
-      background-size: contain;
+      background-size: 10rem;
+      overflow-x: auto;
+      white-space: nowrap;
+      font-size: 1rem;
+      padding: 0 0.5rem;
     }
     @-webkit-keyframes moving_line_scroll {
       0% {
         background-position: 0 0;
       }
       100% {
-        background-position: 7.1rem;
+        background-position: -20rem 0;
       }
     }
     @keyframes moving_line_scroll {
@@ -211,7 +215,7 @@
         background-position: 0 0;
       }
       100% {
-        background-position: 7.1rem;
+        background-position: -20rem 0;
       }
     }
     .sn_about {
@@ -643,6 +647,29 @@
     }
     .lock_scroll {
       overflow: hidden;
+    }
+    .custom_slider .custom_slide.active {
+      padding: 1.2rem 0.8rem;
+      border-radius: 1rem;
+      height: auto;
+      min-height: 18rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.2rem;
+      font-size: 1rem;
+    }
+    .custom_slider .custom_slide.active h2,
+    .custom_slider .custom_slide.active h3 {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    .custom_slider .custom_slide.active .step {
+      max-height: 8rem;
+      height: 40vw;
+      width: auto;
+      margin: 0 auto;
+      display: block;
     }
   }
   

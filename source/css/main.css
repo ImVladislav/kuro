@@ -491,7 +491,7 @@ header.active {
 }
 
 .sn_hero {
-  background: linear-gradient(179deg, #b5dfff -10.01%, #4da2ff 109.21%);
+  background: linear-gradient(179deg, #72c7f6 -10.01%, #60c3f8 109.21%);
 }
 
 .sn_hero_content {
@@ -556,7 +556,7 @@ header.active {
   min-width: 16rem;
 }
 .sn_hero_content .hero_char {
-  max-width: 40rem;
+  max-width: 38rem;
   width: 100%;
   margin-top: -3rem;
   -webkit-animation: hero_char 1s ease;
@@ -688,7 +688,7 @@ header.active {
     background-position: 0 0;
   }
   100% {
-    background-position: 16.5625rem 0;
+    background-position: -20rem 0;
   }
 }
 
@@ -697,12 +697,12 @@ header.active {
     background-position: 0 0;
   }
   100% {
-    background-position: 16.5625rem 0;
+    background-position: -20rem 0;
   }
 }
 .sn_about {
   padding: 6rem 0 3rem;
-  background: linear-gradient(0deg, #2f4696 15.09%, #57a9ff 90.68%);
+  background: linear-gradient(0deg, #5ac2f9 .09%, #49bdfb .68%);
 }
 
 .sn_about_content {
@@ -1261,7 +1261,7 @@ header.active {
 }
 
 .sn_how_to_buy {
-  background: #4c6bed;
+  background: linear-gradient(0deg, #51befe .09%, #2bb6ff .68%);
   padding: 3rem 0 9rem;
 }
 
