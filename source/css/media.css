@@ -151,7 +151,7 @@
     }
     .sn_hero_content .hero_char {
       max-width: 40rem;
-      width: 100%;
+      width: 69%;
       margin-top: -3rem;
       -webkit-animation: hero_char 1s ease;
               animation: hero_char 1s ease;
@@ -342,8 +342,8 @@
     }
     .sn_tokenomics {
       background-size: 50rem;
-      -webkit-animation: sn_tokenomics_content 20s linear infinite;
-              animation: sn_tokenomics_content 20s linear infinite;
+      /* -webkit-animation: sn_tokenomics_content 20s linear infinite; */
+      /* animation: sn_tokenomics_content 20s linear infinite; */
     }
     .sn_tokenomics .moon {
       position: absolute;
@@ -354,10 +354,10 @@
     }
     .sn_tokenomics .rocket_man {
       position: absolute;
-      width: 10rem;
-      height: 10rem;
-      top: 7.5rem;
-      left: -4rem;
+      width: 7rem;
+      height: 15rem;
+      top: 8.5rem;
+      left: 0rem;
     }
     .sn_tokenomics_content {
       gap: 3rem;
@@ -555,7 +555,8 @@
       bottom: 0;
       top: initial;
       max-width: 6rem;
-      aspect-ratio: 1/1;
+      aspect-ratio: 1 / 1;
+      display: none;
     }
     .sn_footer_content {
       padding: 1.5rem 0 0.5rem 0;
