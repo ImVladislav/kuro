@@ -535,6 +535,7 @@ header nav {
   line-height: 2.7625rem;
   -webkit-animation: sn_hero_content_item 1s ease;
   animation: sn_hero_content_item 1s ease;
+  min-height: 10rem;
 }
 .sn_hero_content .row_btn {
   display: -webkit-box;
@@ -1349,6 +1350,7 @@ header nav {
   letter-spacing: 0.01rem;
   -webkit-animation: step_text 1s ease;
   animation: step_text 1s ease;
+  height: 125px;
 }
 .custom_slider .custom_slide.active {
   display: -webkit-box;
