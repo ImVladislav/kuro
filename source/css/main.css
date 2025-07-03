@@ -50,7 +50,7 @@ body::before {
   z-index: 9999;
   pointer-events: none;
   background: url(../img/web/1.gif) repeat;
-  opacity: 0.45;
+  opacity: 0.35;
   mix-blend-mode: normal;
 }
 .page_wrapper {
