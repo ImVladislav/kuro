@@ -32,17 +32,27 @@ body {
   scroll-behavior: smooth;
   position: relative;
 }
+/* body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  background: url(../img/web/1.gif) repeat;
+  opacity: 0.25;
+  mix-blend-mode: soft-light;
+} */
+
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   z-index: 9999;
   pointer-events: none;
-  background: url(../img/noise.jpg) repeat;
-  opacity: 0.25;
-  mix-blend-mode: soft-light;
+  background: url(../img/web/1.gif) repeat;
+  opacity: 0.45;
+  mix-blend-mode: normal;
 }
-
 .page_wrapper {
   position: relative;
   overflow: hidden;
