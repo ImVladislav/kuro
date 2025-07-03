@@ -1618,9 +1618,9 @@ footer {
 }
 footer .footer_bloop {
   position: absolute;
-  /* width: 100%; */
+  width: 25%;
   /* max-width: 345px; */
-  height: 75%;
+  height: 45%;
   /* max-height: 345px; */
   left: calc((100vw - 90rem) / 2);
   top: 50%;
