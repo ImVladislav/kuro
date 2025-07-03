@@ -522,7 +522,7 @@ header nav {
   font-size: 6.875rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 6.875rem;
+  line-height: 5.875rem;
   letter-spacing: -0.20625rem;
   -webkit-animation: sn_hero_content_item 0.5s ease;
   animation: sn_hero_content_item 0.5s ease;
@@ -1622,14 +1622,17 @@ footer {
 }
 footer .footer_bloop {
   position: absolute;
-  width: 25%;
-  /* max-width: 345px; */
-  height: 45%;
-  /* max-height: 345px; */
+  width: 25vw; /* або 25% якщо так більше подобається */
+  max-width: 345px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
   left: calc((100vw - 90rem) / 2);
   top: 50%;
   transform: translateY(-50%);
-  aspect-ratio: 1 / 1;
+  @media (max-width: 1000px) {
+    left: calc((100vw - 75rem) / 2);
+  }
 }
 
 .sn_footer_content {
