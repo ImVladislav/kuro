@@ -216,6 +216,7 @@ header.active {
   display: flex;
   position: relative;
   z-index: 1;
+  padding-right: 100px;
 }
 .header_container .logo img {
   height: 1.625rem;
