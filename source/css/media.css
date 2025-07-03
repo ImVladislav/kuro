@@ -25,7 +25,7 @@
       padding: 3.2rem;
     }
     .sn_about_content::after {
-      width: 35rem;
+      width: 30rem;
       -webkit-transform: translateX(6rem);
               transform: translateX(6rem);
     }
@@ -229,7 +229,7 @@
       border-radius: 1.4rem;
     }
     .sn_about_content::after {
-      height: 40rem;
+      height: 30rem;
       right: 0;
       width: 100%;
       bottom: 0;
