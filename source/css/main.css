@@ -413,6 +413,7 @@ header nav {
   font-weight: 700;
   line-height: 1.625rem;
   letter-spacing: -0.0125rem;
+  font-family: "Bagel Fat One";
 }
 .mobile_navigation .m_nav a:hover {
   -webkit-transform: scale(1.06) rotate(-2deg);
@@ -762,7 +763,7 @@ header nav {
   position: relative;
   z-index: 10;
   -webkit-animation: moving_line_scroll 2s linear infinite;
-  animation: moving_line_scroll 4s linear infinite;
+  animation: moving_line_scroll 6s linear infinite;
 }
 
 @-webkit-keyframes moving_line_scroll {
@@ -1926,4 +1927,9 @@ footer .footer_bloop {
     .page_wrapper {
         top: -85px;
     }
+}
+
+#send-btn {
+  background: #111;
+  color: #fff;
 }
