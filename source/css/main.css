@@ -265,7 +265,7 @@ header.active {
   max-width: 90rem;
   width: 100%;
   margin: auto;
-  background: #ffffff;
+  background: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -326,20 +326,31 @@ header nav {
 
 .menu_mobile_btn {
   display: none;
-
-  background-size: 1.2rem !important;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
   width: 3rem;
   height: 3rem;
-  -webkit-box-flex: 0;
-  -ms-flex: none;
-  flex: none;
-  border-radius: 3rem;
-  -webkit-box-shadow: 0 0 0 0.125rem #0c0d16 inset, 0.125rem 0.25rem 0 0 #000;
-  box-shadow: 0 0 0 0.125rem #0c0d16 inset, 0.125rem 0.25rem 0 0 #000;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+.menu_mobile_btn .hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  gap: 0.4rem;
+}
+.menu_mobile_btn .hamburger span {
+  display: block;
+  width: 2rem;
+  height: 0.3rem;
+  background: #222;
+  border-radius: 2px;
+  transition: 0.3s;
 }
 .menu_mobile_btn:hover {
   -webkit-transform: scale(1.06) rotate(-2deg);
@@ -576,7 +587,7 @@ header nav {
   background-size: 50rem;
   -webkit-animation: sn_hero_content 1s ease;
   animation: sn_hero_content 1s ease;
-  padding-top: 5rem;
+  padding-top: 2rem;
   gap: 2rem;
 }
 .sn_hero_content h1 {
@@ -595,6 +606,10 @@ header nav {
   letter-spacing: -0.20625rem;
   -webkit-animation: sn_hero_content_item 0.5s ease;
   animation: sn_hero_content_item 0.5s ease;
+}
+.sn_hero_content h1 .universe-ai {
+  margin-left: 1rem;
+  font-family: "Bagel Fat One";
 }
 .sn_hero_content p {
   color: #fff;
