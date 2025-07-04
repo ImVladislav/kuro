@@ -63,7 +63,7 @@ body {
 .page_wrapper {
   position: relative;
   overflow: hidden;
-  top: -85px;
+  top: 0px;
   /* margin-top: -2.8rem; */
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -581,13 +581,13 @@ header nav {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url("../img/Solana-logo.png");
+  background-image: url(../img/Solana-logo.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50rem;
   -webkit-animation: sn_hero_content 1s ease;
   animation: sn_hero_content 1s ease;
-  padding-top: 2rem;
+  padding-top: 3rem;
   gap: 2rem;
 }
 .sn_hero_content h1 {
@@ -1919,5 +1919,11 @@ footer .footer_bloop {
         padding-top: 6rem;
         gap: 2rem;
         background-size: 24rem;
+    }
+    .sn_hero_content h1 .universe-ai {
+      margin-left: 0;
+    }
+    .page_wrapper {
+        top: -85px;
     }
 }
