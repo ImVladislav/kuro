@@ -63,7 +63,7 @@ body {
 .page_wrapper {
   position: relative;
   overflow: hidden;
-  top: 0;
+  top: -72px;
   /* margin-top: -2.8rem; */
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -265,7 +265,7 @@ header.active {
   max-width: 90rem;
   width: 100%;
   margin: auto;
-  background: transparent;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
