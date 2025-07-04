@@ -63,7 +63,7 @@ body {
 .page_wrapper {
   position: relative;
   overflow: hidden;
-  top: -72px;
+  top: -85px;
   /* margin-top: -2.8rem; */
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1408,6 +1408,8 @@ header nav {
     flex-direction: column-reverse;
     width: 90vw;
     padding: 30px 15px;
+    padding-bottom: 0;
+
   }
   .custom_slider__wrap__title {
     display: flex;
