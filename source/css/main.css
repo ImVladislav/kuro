@@ -1911,3 +1911,11 @@ footer .footer_bloop {
   transform: scale(1.2);
   background: #fff;
 }
+
+@media screen and (max-width: 767px) {
+    .sn_hero_content {
+        padding-top: 6rem;
+        gap: 2rem;
+        background-size: 24rem;
+    }
+}
